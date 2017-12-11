@@ -329,7 +329,7 @@ int main(int argc, char **argv)
 		std::cerr << "write error \n";
 		return 1;
 	}
-
+	
 	//delete faces edges vertices
 	/*mesh.request_face_status();
 	mesh.request_edge_status();
@@ -360,7 +360,7 @@ int main(int argc, char **argv)
 	auto fh2 = mesh.opposite_face_handle(mesh.halfedge_handle(*e_it, 0));
 	}*/
 
-
+	std::cout << "Changed..." << std::endl;
 	system("pause");
 	return 0;
 }
